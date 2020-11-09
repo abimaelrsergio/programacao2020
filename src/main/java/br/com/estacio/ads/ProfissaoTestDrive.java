@@ -1,6 +1,7 @@
 package br.com.estacio.ads;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ProfissaoTestDrive {
     public static void main(String[] args) {
@@ -12,5 +13,6 @@ public class ProfissaoTestDrive {
         profissoes.add(p2);
         profissoes.add(p3);
         System.out.println(profissoes);
+        Collections.sort(profissoes);
     }
 }
