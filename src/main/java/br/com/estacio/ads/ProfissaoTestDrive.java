@@ -14,6 +14,8 @@ public class ProfissaoTestDrive {
         profissoes.add(p2);
         profissoes.add(p3);
         System.out.println(profissoes);
+        Collections.sort(profissoes);
+        System.out.println(profissoes);
         Collections.sort(profissoes, Comparator.comparing(Profissao::getAnosExperiencia));
         System.out.println(profissoes);
     }
