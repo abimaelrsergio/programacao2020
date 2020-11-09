@@ -10,6 +10,10 @@ public class Profissao implements Comparable<Profissao> {
         this.anosExperiencia = anosExperiencia;
     }
 
+    public int getAnosExperiencia() {
+        return anosExperiencia;
+    }
+
     @Override
     public String toString() {
         return "Profissao{" +
