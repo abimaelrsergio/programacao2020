@@ -9,4 +9,9 @@ public class Profissao {
         this.nome = nome;
         this.anosExperiencia = anosExperiencia;
     }
+
+    @Override
+    public String toString() {
+        return nome;
+    }
 }
