@@ -11,5 +11,6 @@ public class FaculdadeTestDrive {
         profissoes.add(new Profissao("Marceneiro", 2));
         profissoes.add(new Profissao("Arquiteto", 9));
         System.out.println(profissoes);
+        System.out.println(faculdade.getProfissoes());
     }
 }
