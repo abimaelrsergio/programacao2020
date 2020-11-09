@@ -1,6 +1,7 @@
 package br.com.estacio.ads;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Faculdade {
@@ -13,8 +14,12 @@ public class Faculdade {
         this.curso = curso;
     }
 
+    public void adicionar(Profissao profissao){
+        this.profissoes.add(profissao);
+    }
+
     public List<Profissao> getProfissoes() {
-        return profissoes;
+        return Collections.unmodifiableList(profissoes);
     }
 
     public String getNome() {

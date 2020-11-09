@@ -5,12 +5,10 @@ import java.util.List;
 public class FaculdadeTestDrive {
     public static void main(String[] args) {
         Faculdade faculdade = new Faculdade("Estácio", "ADS");
-        List<Profissao> profissoes = faculdade.getProfissoes();
-        System.out.println(profissoes);
-        profissoes.add(new Profissao("Carpinteiro", 10));
-        profissoes.add(new Profissao("Marceneiro", 2));
-        profissoes.add(new Profissao("Arquiteto", 9));
-        System.out.println(profissoes);
+        faculdade.adicionar(new Profissao("Carpinteiro", 10));
+        faculdade.adicionar(new Profissao("Marceneiro", 2));
+        faculdade.adicionar(new Profissao("Arquiteto", 9));
+        faculdade.getProfissoes().add(new Profissao("Padeiro", 5));
         System.out.println(faculdade.getProfissoes());
     }
 }
