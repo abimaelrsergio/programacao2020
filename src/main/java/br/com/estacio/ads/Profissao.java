@@ -12,6 +12,9 @@ public class Profissao {
 
     @Override
     public String toString() {
-        return nome;
+        return "Profissao{" +
+                "nome='" + nome + '\'' +
+                ", anosExperiencia=" + anosExperiencia +
+                '}';
     }
 }
