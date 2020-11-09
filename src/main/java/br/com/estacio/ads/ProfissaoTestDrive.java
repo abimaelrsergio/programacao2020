@@ -16,6 +16,8 @@ public class ProfissaoTestDrive {
         System.out.println(profissoes);
         Collections.sort(profissoes);
         System.out.println(profissoes);
+        Collections.reverse(profissoes);
+        System.out.println(profissoes);
         Collections.sort(profissoes, Comparator.comparing(Profissao::getAnosExperiencia));
         System.out.println(profissoes);
     }
