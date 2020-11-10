@@ -2,12 +2,14 @@ package br.com.estacio.ads;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 
 public class PerformanceTestDrive {
     public static void main(String[] args) {
-        Collection<Integer> numeros = new ArrayList<>();
+        //Collection<Integer> numeros = new ArrayList<>();
+        Collection<Integer> numeros = new HashSet<>();
         long inicio = System.currentTimeMillis();
-        for (int i = 1; i <= 50000; i++){
+        for (int i = 1; i <= 100000; i++){
             numeros.add(i);
         }
         long tempoAdd = System.currentTimeMillis();
