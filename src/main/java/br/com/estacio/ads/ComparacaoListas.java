@@ -19,4 +19,22 @@ public class ComparacaoListas {
         System.out.println("Tempo remoção ArrayList: " + tempoArrayList);
         System.out.println("Tempo remoção LinkedList: " + tempoLinkedList);
     }
+
+    private static long inserirElementos(List<Integer> numeros, int quantidade){
+        long tempoInicial = System.currentTimeMillis();
+        for(int i = 0; i < quantidade; i++){
+            numeros.add(i);
+        }
+        long tempoFinal = System.currentTimeMillis();
+        return tempoFinal - tempoInicial;
+    }
+
+    private static long removerPrimeirosItens(List<Integer> numeros) {
+        long ini = System.currentTimeMillis();
+        for (int i = 0; i < 100; i++) {
+            numeros.remove(0);
+        }
+        long fim = System.currentTimeMillis();
+        return fim - ini;
+    }
 }
