@@ -1,22 +1,19 @@
 package br.com.estacio.ads;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class FuncionarioTestDrive {
     public static void main(String[] args) {
-        Set<String> funcionarios = new HashSet<>();
+        Collection<String> funcionarios = new HashSet<>();
         funcionarios.add("Abimael Sergio");
         funcionarios.add("André Godoi");
         funcionarios.add("Matheus Silva");
-        System.out.println(funcionarios);
-        for (String func : funcionarios) {
-            System.out.println(func);
-        }
-        funcionarios.forEach(func -> {
-            System.out.println(func);
-        });
-        boolean contem = funcionarios.contains("Abimael Sergio");
-        System.out.println(contem);
+        funcionarios.add("Rodolfo");
+        funcionarios.add("Mario");
+        funcionarios.add("Miguel");
+        List<String> newFunc = new ArrayList<>(funcionarios);
+        System.out.println(newFunc.get(1));
+        Collections.sort(newFunc);
+        System.out.println(newFunc);
     }
 }
