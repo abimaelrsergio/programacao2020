@@ -18,6 +18,14 @@ public class Faculdade {
         this.profissoes.add(profissao);
     }
 
+    public int getTotalAnosExperiencia(){
+        int totalAnos = 0;
+        for (Profissao prof : profissoes){
+            totalAnos += prof.getAnosExperiencia();
+        }
+        return totalAnos;
+    }
+
     public List<Profissao> getProfissoes() {
         return Collections.unmodifiableList(profissoes);
     }
