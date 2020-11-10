@@ -11,7 +11,7 @@ public class FaculdadeTestDrive {
         faculdade.adicionar(new Profissao("Marceneiro", 2));
         faculdade.adicionar(new Profissao("Arquiteto", 9));
         faculdade.adicionar(new Profissao("Padeiro", 5));
-        System.out.println(faculdade.getProfissoes());
+        System.out.println("ordem: " + faculdade.getProfissoes());
         List<Profissao> profissoes = new ArrayList<>(faculdade.getProfissoes());
         Collections.sort(profissoes);
         System.out.println(profissoes);
