@@ -37,4 +37,13 @@ public class Faculdade {
     public String getCurso() {
         return curso;
     }
+
+    @Override
+    public String toString() {
+        return "Faculdade{" +
+                "nome='" + nome + '\'' +
+                ", curso='" + curso + '\'' +
+                ", profissoes=" + profissoes +
+                '}';
+    }
 }

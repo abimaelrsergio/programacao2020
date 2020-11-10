@@ -16,5 +16,6 @@ public class FaculdadeTestDrive {
         Collections.sort(profissoes);
         System.out.println(profissoes);
         System.out.println("Total exp: " + faculdade.getTotalAnosExperiencia());
+        System.out.println(faculdade);
     }
 }
