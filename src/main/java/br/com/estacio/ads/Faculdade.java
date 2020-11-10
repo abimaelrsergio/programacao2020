@@ -19,11 +19,11 @@ public class Faculdade {
     }
 
     public int getTotalAnosExperiencia(){
-        int totalAnos = 0;
-        for (Profissao prof : profissoes){
-            totalAnos += prof.getAnosExperiencia();
-        }
-        return totalAnos;
+        // Java 8
+        return profissoes
+                .stream()
+                .mapToInt(Profissao::getAnosExperiencia)
+                .sum();
     }
 
     public List<Profissao> getProfissoes() {
