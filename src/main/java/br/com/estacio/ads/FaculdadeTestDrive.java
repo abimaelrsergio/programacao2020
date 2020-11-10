@@ -8,7 +8,7 @@ public class FaculdadeTestDrive {
         faculdade.adicionar(new Profissao("Carpinteiro", 10));
         faculdade.adicionar(new Profissao("Marceneiro", 2));
         faculdade.adicionar(new Profissao("Arquiteto", 9));
-        faculdade.getProfissoes().add(new Profissao("Padeiro", 5));
+        faculdade.adicionar(new Profissao("Padeiro", 5));
         System.out.println(faculdade.getProfissoes());
     }
 }
