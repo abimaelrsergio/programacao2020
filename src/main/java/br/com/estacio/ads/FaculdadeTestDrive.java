@@ -1,5 +1,7 @@
 package br.com.estacio.ads;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class FaculdadeTestDrive {
@@ -10,5 +12,8 @@ public class FaculdadeTestDrive {
         faculdade.adicionar(new Profissao("Arquiteto", 9));
         faculdade.adicionar(new Profissao("Padeiro", 5));
         System.out.println(faculdade.getProfissoes());
+        List<Profissao> profissoes = new ArrayList<>(faculdade.getProfissoes());
+        Collections.sort(profissoes);
+        System.out.println(profissoes);
     }
 }
