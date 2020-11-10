@@ -16,5 +16,7 @@ public class FuncionarioTestDrive {
         funcionarios.forEach(func -> {
             System.out.println(func);
         });
+        boolean contem = funcionarios.contains("Abimael Sergio");
+        System.out.println(contem);
     }
 }
